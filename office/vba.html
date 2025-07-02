@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>VBA使用速览 | 小熊的技术文档</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/fav.ico">
+    <link rel="stylesheet" href="/css/katex.min.css">
+    <link rel="stylesheet" href="/css/github-markdown.min.css">
+    <meta name="description" content="衣带渐宽终不悔，为伊消得人憔悴">
+    
+    <link rel="preload" href="/assets/css/0.styles.e6449353.css" as="style"><link rel="preload" href="/assets/js/app.6a1f826f.js" as="script"><link rel="preload" href="/assets/js/2.983eb755.js" as="script"><link rel="preload" href="/assets/js/45.83f86d1b.js" as="script"><link rel="prefetch" href="/assets/js/10.5bf4d2fa.js"><link rel="prefetch" href="/assets/js/11.b1389b87.js"><link rel="prefetch" href="/assets/js/12.08f2a6db.js"><link rel="prefetch" href="/assets/js/13.dd916ef4.js"><link rel="prefetch" href="/assets/js/14.1b24be2a.js"><link rel="prefetch" href="/assets/js/15.7cd25d45.js"><link rel="prefetch" href="/assets/js/16.cc9a1a73.js"><link rel="prefetch" href="/assets/js/17.05f7c7fd.js"><link rel="prefetch" href="/assets/js/18.6fca26c9.js"><link rel="prefetch" href="/assets/js/19.7ddd4ea1.js"><link rel="prefetch" href="/assets/js/20.dc862f59.js"><link rel="prefetch" href="/assets/js/21.4620cdf4.js"><link rel="prefetch" href="/assets/js/22.d710c69e.js"><link rel="prefetch" href="/assets/js/23.078391ef.js"><link rel="prefetch" href="/assets/js/24.ca223bca.js"><link rel="prefetch" href="/assets/js/25.4b8f7c66.js"><link rel="prefetch" href="/assets/js/26.b197e7ab.js"><link rel="prefetch" href="/assets/js/27.05283751.js"><link rel="prefetch" href="/assets/js/28.80229a71.js"><link rel="prefetch" href="/assets/js/29.51838c3e.js"><link rel="prefetch" href="/assets/js/3.4e77dfef.js"><link rel="prefetch" href="/assets/js/30.cc1fa49f.js"><link rel="prefetch" href="/assets/js/31.355c2d8b.js"><link rel="prefetch" href="/assets/js/32.f51dd63c.js"><link rel="prefetch" href="/assets/js/33.d9bb6fb3.js"><link rel="prefetch" href="/assets/js/34.04dd61e1.js"><link rel="prefetch" href="/assets/js/35.25ecb989.js"><link rel="prefetch" href="/assets/js/36.25dc0e76.js"><link rel="prefetch" href="/assets/js/37.7de73fef.js"><link rel="prefetch" href="/assets/js/38.086e70a4.js"><link rel="prefetch" href="/assets/js/39.c82f3900.js"><link rel="prefetch" href="/assets/js/4.440c4dd9.js"><link rel="prefetch" href="/assets/js/40.75fa0bb0.js"><link rel="prefetch" href="/assets/js/41.bdc0167a.js"><link rel="prefetch" href="/assets/js/42.deb66aaa.js"><link rel="prefetch" href="/assets/js/43.a10f2194.js"><link rel="prefetch" href="/assets/js/44.47290b9a.js"><link rel="prefetch" href="/assets/js/46.e652be80.js"><link rel="prefetch" href="/assets/js/47.baddc39f.js"><link rel="prefetch" href="/assets/js/48.d651adc8.js"><link rel="prefetch" href="/assets/js/49.e78e4be6.js"><link rel="prefetch" href="/assets/js/5.e8844f36.js"><link rel="prefetch" href="/assets/js/50.f25489e0.js"><link rel="prefetch" href="/assets/js/51.9d6635ee.js"><link rel="prefetch" href="/assets/js/52.751a7bee.js"><link rel="prefetch" href="/assets/js/53.85a2b1f7.js"><link rel="prefetch" href="/assets/js/54.6580c438.js"><link rel="prefetch" href="/assets/js/6.54e1cc95.js"><link rel="prefetch" href="/assets/js/7.53bcef6c.js"><link rel="prefetch" href="/assets/js/8.94fca626.js"><link rel="prefetch" href="/assets/js/9.26cfd48c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e6449353.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小熊的技术文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/front-end/" class="nav-link">
+  🎨前端
+</a></div><div class="nav-item"><a href="/back-end/" class="nav-link">
+  💻后端
+</a></div><div class="nav-item"><a href="/office/" class="nav-link router-link-active">
+  🏢办公
+</a></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  🚀实战
+</a></div><div class="nav-item"><a href="/general/" class="nav-link">
+  🍓通用
+</a></div><div class="nav-item"><a href="/general/fast.html" class="nav-link">
+  ⚡快速笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🦉近期重点" class="dropdown-title"><span class="title">🦉近期重点</span> <span class="arrow down"></span></button> <button type="button" aria-label="🦉近期重点" class="mobile-dropdown-title"><span class="title">🦉近期重点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/practice/book.html" class="nav-link">
+  📚常用技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/office/other.html" class="nav-link">
+  💼常用办公技巧
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="⭐️资源" class="dropdown-title"><span class="title">⭐️资源</span> <span class="arrow down"></span></button> <button type="button" aria-label="⭐️资源" class="mobile-dropdown-title"><span class="title">⭐️资源</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.birdiesearch.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小鸟搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://salttiger.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  每天一本编程书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://metaso.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  秘塔AI搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/front-end/" class="nav-link">
+  🎨前端
+</a></div><div class="nav-item"><a href="/back-end/" class="nav-link">
+  💻后端
+</a></div><div class="nav-item"><a href="/office/" class="nav-link router-link-active">
+  🏢办公
+</a></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  🚀实战
+</a></div><div class="nav-item"><a href="/general/" class="nav-link">
+  🍓通用
+</a></div><div class="nav-item"><a href="/general/fast.html" class="nav-link">
+  ⚡快速笔记
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="🦉近期重点" class="dropdown-title"><span class="title">🦉近期重点</span> <span class="arrow down"></span></button> <button type="button" aria-label="🦉近期重点" class="mobile-dropdown-title"><span class="title">🦉近期重点</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/practice/book.html" class="nav-link">
+  📚常用技术书籍
+</a></li><li class="dropdown-item"><!----> <a href="/office/other.html" class="nav-link">
+  💼常用办公技巧
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="⭐️资源" class="dropdown-title"><span class="title">⭐️资源</span> <span class="arrow down"></span></button> <button type="button" aria-label="⭐️资源" class="mobile-dropdown-title"><span class="title">⭐️资源</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://www.birdiesearch.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  小鸟搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://salttiger.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  每天一本编程书
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://metaso.cn/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  秘塔AI搜索
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/office/word.html" class="sidebar-link">Word和Pdf使用技巧</a></li><li><a href="/office/excel.html" class="sidebar-link">Excel技巧</a></li><li><a href="/office/vba.html" aria-current="page" class="active sidebar-link">VBA使用速览</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/office/vba.html#一般设置" class="sidebar-link">一般设置</a></li><li class="sidebar-sub-header"><a href="/office/vba.html#基本语法" class="sidebar-link">基本语法</a></li><li class="sidebar-sub-header"><a href="/office/vba.html#excel的vb中使用正则表达式" class="sidebar-link">Excel的VB中使用正则表达式</a></li></ul></li><li><a href="/office/other.html" class="sidebar-link">高效办公</a></li><li><a href="/office/software.html" class="sidebar-link">软件推荐</a></li><li><a href="/office/math.html" class="sidebar-link">📏论文中的数学</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vba使用速览"><a href="#vba使用速览" class="header-anchor">#</a> VBA使用速览</h1> <h2 id="一般设置"><a href="#一般设置" class="header-anchor">#</a> 一般设置</h2> <p><strong>显示开发工具</strong>：<code>文件</code>-<code>选项</code>-<code>自定义功能区</code>-在“自定义功能区”下方勾选<code>开发工具</code>，即可在菜单中显示开发工具。</p> <p><img src="https://pic.imgdb.cn/item/65ab3e0e871b83018a854533.jpg" alt="选择开发工具"></p> <p><strong>代码编辑基本设置</strong>：在vba编辑器中，选择<code>工具</code>-<code>选项</code>，在“编辑器”标签栏的<code>自动语法检测</code>部分，把勾取消掉，就不会每次语法出问题就谈对话框了。</p> <p><img src="https://pic.imgdb.cn/item/65ab3f8b871b83018a8a1433.jpg" alt="关闭自动语法检测"></p> <h2 id="基本语法"><a href="#基本语法" class="header-anchor">#</a> 基本语法</h2> <h2 id="excel的vb中使用正则表达式"><a href="#excel的vb中使用正则表达式" class="header-anchor">#</a> Excel的VB中使用正则表达式</h2> <p>需要处理的列大概长这样</p> <div class="language-text extra-class"><pre class="language-text"><code>术前血压119/67mmHg     心率（99次／分）　　　血氧饱和度（99％） 
+术中血压121/68mmHg     心率（101次／分）　　　血氧饱和度（98％）
+术后血压113/64mmHg     心率（105次／分）　　　血氧饱和度（99％）
+</code></pre></div><p>在excel中使用vb将其拆分为以下形式：</p> <p><img src="https://pic.imgdb.cn/item/61227f1e44eaada739fa2e02.jpg" alt="excel拆分"></p> <p>所使用的vb语句如下：</p> <div class="language-vb extra-class"><pre class="language-vb"><code><span class="token keyword">Option</span> Explicit
+
+<span class="token comment">' 根据阶段和项目获取信息</span>
+<span class="token keyword">Function</span> getInfo<span class="token punctuation">(</span>content <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">,</span> phase <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">,</span> item <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">)</span>
+    <span class="token keyword">Dim</span> phaseString<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">As</span> <span class="token keyword">String</span><span class="token punctuation">,</span> allInfo <span class="token keyword">As</span> <span class="token keyword">String</span>
+    
+    phaseString <span class="token operator">=</span> VBA<span class="token punctuation">.</span>Split<span class="token punctuation">(</span>content<span class="token punctuation">,</span> Chr<span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    allInfo <span class="token operator">=</span> <span class="token string">&quot;&quot;</span>
+    <span class="token keyword">If</span> UBound<span class="token punctuation">(</span>phaseString<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">3</span> <span class="token keyword">Then</span>
+        <span class="token keyword">If</span> phase <span class="token operator">=</span> <span class="token string">&quot;术前&quot;</span> <span class="token keyword">Then</span>
+            allInfo <span class="token operator">=</span> phaseString<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">ElseIf</span> phase <span class="token operator">=</span> <span class="token string">&quot;术中&quot;</span> <span class="token keyword">Then</span>
+            allInfo <span class="token operator">=</span> phaseString<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token keyword">ElseIf</span> phase <span class="token operator">=</span> <span class="token string">&quot;术后&quot;</span> <span class="token keyword">Then</span>
+            allInfo <span class="token operator">=</span> phaseString<span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">)</span>
+        <span class="token keyword">End</span> <span class="token keyword">If</span>
+    <span class="token keyword">ElseIf</span> UBound<span class="token punctuation">(</span>phaseString<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token number">2</span> <span class="token keyword">Then</span>
+        <span class="token keyword">If</span> phase <span class="token operator">=</span> <span class="token string">&quot;术前&quot;</span> <span class="token keyword">Then</span>
+            allInfo <span class="token operator">=</span> phaseString<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+        <span class="token keyword">ElseIf</span> phase <span class="token operator">=</span> <span class="token string">&quot;术中&quot;</span> <span class="token keyword">Then</span>
+            allInfo <span class="token operator">=</span> phaseString<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">ElseIf</span> phase <span class="token operator">=</span> <span class="token string">&quot;术后&quot;</span> <span class="token keyword">Then</span>
+            allInfo <span class="token operator">=</span> phaseString<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token keyword">End</span> <span class="token keyword">If</span>
+    <span class="token keyword">End</span> <span class="token keyword">If</span>
+    
+    <span class="token keyword">Dim</span> reg <span class="token keyword">As</span> <span class="token keyword">Object</span><span class="token punctuation">,</span> mc <span class="token keyword">As</span> <span class="token keyword">Object</span><span class="token punctuation">,</span> result <span class="token keyword">As</span> <span class="token keyword">String</span>
+    <span class="token keyword">Set</span> reg <span class="token operator">=</span> CreateObject<span class="token punctuation">(</span><span class="token string">&quot;VBScript.RegExp&quot;</span><span class="token punctuation">)</span>
+    <span class="token keyword">If</span> item <span class="token operator">=</span> <span class="token string">&quot;血压&quot;</span> <span class="token keyword">Then</span>
+        reg<span class="token punctuation">.</span>Pattern <span class="token operator">=</span> <span class="token string">&quot;血[压](.+)?mm&quot;</span>
+        <span class="token keyword">Set</span> mc <span class="token operator">=</span> reg<span class="token punctuation">.</span>Execute<span class="token punctuation">(</span>allInfo<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> mc<span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>submatches<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">ElseIf</span> item <span class="token operator">=</span> <span class="token string">&quot;心率&quot;</span> <span class="token keyword">Then</span>
+        reg<span class="token punctuation">.</span>Pattern <span class="token operator">=</span> <span class="token string">&quot;（(\d+)?次／分&quot;</span>
+        <span class="token keyword">Set</span> mc <span class="token operator">=</span> reg<span class="token punctuation">.</span>Execute<span class="token punctuation">(</span>allInfo<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> mc<span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>submatches<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">ElseIf</span> item <span class="token operator">=</span> <span class="token string">&quot;血氧饱和度&quot;</span> <span class="token keyword">Then</span>
+        reg<span class="token punctuation">.</span>Pattern <span class="token operator">=</span> <span class="token string">&quot;（(\d+)?％&quot;</span>
+        <span class="token keyword">Set</span> mc <span class="token operator">=</span> reg<span class="token punctuation">.</span>Execute<span class="token punctuation">(</span>allInfo<span class="token punctuation">)</span>
+        result <span class="token operator">=</span> mc<span class="token punctuation">.</span>item<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span>submatches<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    <span class="token keyword">End</span> <span class="token keyword">If</span>
+
+    getInfo <span class="token operator">=</span> result
+<span class="token keyword">End</span> <span class="token keyword">Function</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新于:</span> <span class="time">3/10/2024, 10:15:40 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/office/excel.html" class="prev">
+        Excel技巧
+      </a></span> <span class="next"><a href="/office/other.html">
+        高效办公
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.6a1f826f.js" defer></script><script src="/assets/js/2.983eb755.js" defer></script><script src="/assets/js/45.83f86d1b.js" defer></script>
+  </body>
+</html>
